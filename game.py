@@ -1,8 +1,8 @@
 import pygame
 import numpy as np
 
-MINES = 20
-GRID_SIZE = 10
+MINES = 40
+GRID_SIZE = 20
 
 SCREEN_SIZE = 480
 TILE_SIZE = SCREEN_SIZE//GRID_SIZE
@@ -10,8 +10,8 @@ mine_image = pygame.image.load('images/bomb.png')
 mine_image = pygame.transform.scale(mine_image, (TILE_SIZE, TILE_SIZE))
 flag_image = pygame.image.load('images/flag.png')
 flag_image = pygame.transform.scale(flag_image, (TILE_SIZE, TILE_SIZE))
-explosion_image = pygame.image.load('images/explosion.png')
-explosion_image = pygame.transform.scale(explosion_image, (TILE_SIZE, 0.8*TILE_SIZE))
+explosion_image = pygame.image.load('images/exploded.png')
+explosion_image = pygame.transform.scale(explosion_image, (TILE_SIZE, TILE_SIZE))
 
 #Mine sweeper game
 class Game:
